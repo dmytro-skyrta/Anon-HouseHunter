@@ -1,31 +1,64 @@
 # Anon-HouseHunter
+
+Set your search criteria and receive all found properties on your mobile phone via Telegram at any frequency you choose. Be always the first to contact the property owner!
+
+## Project Overview
+
 Welcome to HausHunter, a powerful, scalable real estate search tool designed to help users find their perfect home in Berchtesgaden and beyond. Leveraging a microarchitecture, each module in HausHunter operates independently, enhancing debugging efficiency and enabling effortless scalability. This modularity ensures that components can be reused in other projects, making HausHunter a versatile addition to any developer's toolkit.
 
-## Key Features:
+## Key Features
 
-### Microarchitecture Design:
-Each module is self-contained and reusable, enhancing debugging and scalability. This allows for effortless integration of new features and the ability to scale the project to search across all of Germany.
+### 1. Microarchitecture: 
+HausHunter's design is based on a microarchitecture, where each module functions autonomously. This improves debugging and allows the project to scale to any size effortlessly.
 
-### Customizable Search Criteria:
-Initially focused on Berchtesgaden, the search criteria can be easily expanded to cover any region in Germany, providing flexibility to meet various user needs.
+### 2. Scalable Search Scope: 
+Initially focused on finding properties in Berchtesgaden, the search criteria can be easily expanded to cover all of Germany, providing flexibility for various user needs.
 
-### Multi-Site Compatibility:
-The project can search for real estate across a user-defined list of websites. Adding new sites is straightforward, requiring only a short algorithm to handle each site's unique characteristics.
+### 3. Customizable Search Sources: 
+Users can search for properties across multiple websites. Adding new websites requires a short algorithm due to the unique features of each site, ensuring seamless integration.
 
-### Anonymous and Secure Data Retrieval:
-Supports working with secured websites, retrieving data anonymously through proxies or the TOR network. This includes using fake user agents and other anonymization techniques to prevent site bans due to frequent requests or automated scraping.
+### 4. Anonymized Data Collection: 
+HausHunter can work with protected sites, retrieving data anonymously through proxies or TOR, employing fake user agents and other anonymization mechanisms to protect users from bans due to frequent requests or automation (scraping and parsing).
 
-### Robust Logging System:
-Features dual logging streams: one for real-time user display (optional) and another automatically recorded in a text file. This ensures comprehensive logging for better monitoring and troubleshooting.
+### 5. Dual Logging System: 
+The project features a dual logging system. One stream logs information to the console (optional for the user), while the other automatically records logs to a text file, ensuring comprehensive tracking and easy debugging.
 
-### Comprehensive Data Storage:
-All valuable data is recorded in text files, including lists of found properties, verified working proxies, Telegram bot parameters, and other useful information. This simplifies further use and analysis of the gathered data.
+### 6. Data Storage: 
+HausHunter saves all useful data in text files, creating lists of found properties, verified working proxies, Telegram bot parameters, and other valuable information, facilitating further use and analysis.
 
-## Additional Features:
-### Scalable and Extensible:
-The microarchitecture allows for easy addition of new features and modules without affecting existing functionality, ensuring the project can grow with your needs.
+## Technical Highlights
 
-### User-Friendly Configuration:
-Simple setup and configuration make it accessible for users of all technical levels, ensuring a smooth experience from installation to operation.
+### 1. Flexible Logging Configuration: 
+Users can choose to enable or disable console logging, while file logging remains active to ensure data persistence.
+Dynamic User-Agent Configuration: Users can opt to create a fake user agent, adding an extra layer of anonymity during data collection.
 
-Anon-HouseHunter is not just a tool, but a comprehensive solution for real estate search and data extraction, combining cutting-edge technology with practical usability. Whether you are looking for a single property or managing a large-scale search across multiple regions, RealEstateScout is designed to meet your needs with efficiency and security. Join us in revolutionizing the way you find real estate in Germany!
+### 2. Proxy Management: 
+HausHunter includes a robust proxy checker to validate proxies from provided lists, ensuring reliable and anonymous connections.
+Seamless Web Scraping: Using Selenium with ChromeDriver, the project can navigate and extract data from various property listing sites, with mechanisms to handle different proxy setups and user agents.
+
+### 3. Telegram Integration: 
+Notifications about new property listings can be configured to be sent via a Telegram bot, keeping users promptly informed.
+
+## How It Works
+
+### 1. Logging Configuration: 
+Users can choose their preferred logging setup, ensuring they receive the necessary feedback during the search process.
+
+### 2. Search Object Configuration: 
+Define the type of property, location, search radius, and maximum price, or repeat the last saved search configuration.
+
+### 3. Connection Configuration: 
+Choose the preferred connection method (direct, proxy, TOR), ensuring a secure and anonymous search process.
+
+### 4. Site-Specific Searches: 
+For each site, custom search functions handle the unique features of the site, ensuring accurate data collection.
+
+### 5. Data Processing and Storage: 
+Extracted data is logged, processed, and stored in text files for easy access and further use.
+
+### 6. Notification System: 
+Integrate with Telegram to receive updates on new property listings directly to your device.
+
+## Conclusion
+
+HausHunter is more than just a real estate search tool; it's a highly customizable and scalable solution that ensures user anonymity, flexible configurations, and comprehensive data handling. Its robust architecture and advanced features make it an ideal project for developers and real estate enthusiasts looking to efficiently find properties while maintaining privacy and flexibility.
