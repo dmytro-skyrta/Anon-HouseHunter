@@ -1,0 +1,4 @@
+Property Type: Apartment
+Location: 83489 Berchtesgaden
+Radius: 15
+Max Price: 1500

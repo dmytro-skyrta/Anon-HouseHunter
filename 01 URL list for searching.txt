@@ -1,0 +1,13 @@
+1. You can exclude addresses from the search by adding any symbol in front of them, for example "#" or " "
+2. The search address must begin with "http"
+
+LIST:
+
+ https://2ip.ru/
+ https://ipv4.icanhazip.com/
+ https://ipv6.icanhazip.com/
+https://www.kleinanzeigen.de
+ https://www.immobilienscout24.de/
+ https://www.immowelt.de/
+ https://browser-info.ru
+
