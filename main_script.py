@@ -48,9 +48,9 @@ def http2ip(url, useragent, working_proxies_list):                              
     logger.info(f"Getting response from {url} with def get_anonym_with_requests_library:")                              # Logging the start of the request
     response = get_anonym_with_requests_library(url, useragent, working_proxies_list)                                   # Getting the response
     logger.info(f"Parsing the response received from {url} with BeautifulSoup:")                                        # Logging the start of parsing
-    soup = BeautifulSoup(response.text, "lxml")                                                                 # Parsing the response text with BeautifulSoup
-    ipv4 = soup.find("div", class_="ip").text.strip()                                                             # Extracting the IP address from the parsed content
-    location = soup.find("div", id="ip-info-country").text.splitlines()[1].strip()                                # Extracting the location from the parsed content
+    soup = BeautifulSoup(response.text, "lxml")                                                                         # Parsing the response text with BeautifulSoup
+    ipv4 = soup.find("div", class_="ip").text.strip()                                                                   # Extracting the IP address from the parsed content
+    location = soup.find("div", id="ip-info-country").text.splitlines()[1].strip()                                      # Extracting the location from the parsed content
     logger.info(f"We are looking like user from:\nipv4: {ipv4}\nlocation: {location}")                                  # Logging the IP and location
 
 def kleinanzeigen(object_to_search, useragent, working_proxies_list):                                                   # Defining a function to search on Kleinanzeigen
